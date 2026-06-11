@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura Regenerativa: O Futuro da Terra</title>
+    <style>
+        /* Reset e Configurações Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f9f6;
+            color: #2c3e2f;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #386641;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6a994e;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #386641;
+        }
+
+        /* Seção Hero */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #f2f7f2 0%, #e8f0e8 100%);
+            border-bottom: 1px solid #e0ebe0;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: #1b4332;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #405d4b;
+        }
+
+        /* Seção O que é */
+        .about {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1b4332;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #6a994e;
+            margin: 10px auto 0;
+        }
+
+        /* Seção de Dados (Cards) */
+        .stats {
+            padding: 60px 0;
+            background-color: #f7f9f6;
+        }
+
+        .grid-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border-top: 4px solid #6a994e;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #386641;
+            margin-bottom: 10px;
+        }
+
+        /* Importância para a Sociedade */
+        .importance {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+
+        .benefit-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .benefit-col {
+            flex: 1;
+            min-wIdth: 280px;
+        }
+
+        .benefit-col h3 {
+            color: #386641;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1b4332;
+            color: #f2f7f2;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .header-content { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">🌱 AgroRegen</div>
+            <nav>
+                <a href="#sobre">Conceito</a>
+                <a href="#dados">Dados</a>
+                <a href="#importancia">Impacto Social</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section class="hero">
+        <div class="container">
+            <h1>Agricultura Regenerativa</h1>
+            <p>Mais do que sustentar, o objetivo é recuperar. Conheça a prática agrícola que reconstrói a saúde do solo, protege a biodiversidade e combate as mudanças climáticas.</p>
+        </div>
+    </section>
+
+    <!-- O que é -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">O que é?</h2>
+            <p style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; color: #4a5568;">
+                A agricultura regenerativa é uma abordagem de gestão da terra que foca na recuperação dos ecossistemas. Ao contrário da agricultura convencional, ela prioriza a regeneração do solo, o aumento da biodiversidade, a melhoria do ciclo da água e o sequestro de carbono, garantindo a produção de alimentos saudáveis a longo prazo.
+            </p>
+        </div>
+    </section>
+
+    <!-- Dados Globais -->
+    <section id="dados" class="stats">
+        <div class="container">
+            <h2 class="section-title">Dados e Evidências</h2>
+            <div class="grid-stats">
+                <div class="stat-card">
+                    <div class="stat-number">40%</div>
+                    <p>Dos solos agrícolas do mundo estão severamente degradados. A regeneração urge.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3x +</div>
+                    <p>Mais retenção de água em solos ricos em matéria orgânica, mitigando secas.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10 GT</div>
+                    <p>De CO2 por ano podem ser sequestrados globalmente através dessas práticas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importância para a Sociedade -->
+    <section id="importancia" class="importance">
+        <div class="container">
+            <h2 class="section-title">Importância para a Sociedade</h2>
+            <div class="benefit-row">
+                <div class="benefit-col">
+                    <h3>🛡️ Segurança Alimentar</h3>
+                    <p>Solos mais saudáveis produzem alimentos mais ricos em nutrientes. Isso garante que as futuras gerações tenham acesso a culturas fortes, resistentes a pragas e mudanças climáticas severas.</p>
+                </div>
+                <div class="benefit-col">
+                    <h3>💧 Proteção dos Recursos Hídricos</h3>
+                    <p>Aumentar a matéria orgânica do solo funciona como uma esponja natural. Isso reduz o desperdício de água na irrigação, reabastece lençóis freáticos e evita a contaminação de rios por defensivos químicos.</p>
+                </div>
+                <div class="benefit-col">
+                    <h3>💼 Resiliência Econômica</h3>
+                    <p>Reduz a dependência dos agricultores em fertilizantes químicos caros. O modelo regenerativo diminui os custos de produção no longo prazo e gera comunidades rurais mais prósperas e estáveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AgroRegen. Cultivando um futuro sustentável para a humanidade.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
